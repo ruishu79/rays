@@ -25,6 +25,10 @@ import RosePagination from './components/example/RosePagination.vue'
 import RoseModal from './components/example/RoseModal.vue'
 //通知
 import RoseNotification from './components/example/RoseNotification.vue'
+//输入框
+import RoseInput from './components/example/RoseInput.vue'
+//单选框
+import RoseRadio from './components/example/RoseRadio.vue'
 
 
 
@@ -65,6 +69,12 @@ router.map({
 	},
 	'/example/rose-notification':{
 		component:RoseNotification
+	},
+	'/example/rose-input':{
+		component:RoseInput
+	},
+	'/example/rose-radio':{
+		component:RoseRadio
 	}
 })
 router.redirect({
