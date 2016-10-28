@@ -29,6 +29,10 @@ import RoseNotification from './components/example/RoseNotification.vue'
 import RoseInput from './components/example/RoseInput.vue'
 //单选框
 import RoseRadio from './components/example/RoseRadio.vue'
+//数量输入
+import RoseNumber from './components/example/RoseNumber.vue'
+//数量输入
+import RoseSwitch from './components/example/RoseSwitch.vue'
 
 
 
@@ -75,6 +79,12 @@ router.map({
 	},
 	'/example/rose-radio':{
 		component:RoseRadio
+	},
+	'/example/rose-number':{
+		component:RoseNumber
+	},
+	'/example/rose-switch':{
+		component:RoseSwitch
 	}
 })
 router.redirect({

@@ -11,7 +11,7 @@
 .rs_radio_text{font-weight: normal; margin-left: 8px; font-size: 12px; color: rgba(52,73,94,1); float: left;}
 </style>
 <template>
-	<label class="rs_radio_wrap" v-for="radio in radioData" @mouseup="radioCheck(radio)">
+	<label class="rs_radio_wrap" v-for="radio in radioData" @mouseup="radioCheck(radio,$event)">
 		<div class="rs_radio" v-if="!radio.check" :class={'rs_radio_disable':radio.disable}>
 		</div>
 		<div class="rs_radio rs_radio_checked" v-if="radio.check" :class={'rs_radio_disable':radio.disable}>
@@ -29,9 +29,9 @@
 		computed:{
 		},
 		methods:{
-			radioCheck(radio){
+			radioCheck(radio,e){
 				let radioState=radio.check;
-				if(!radio.disable)
+				if(!radio.disable&&e.button==0)
 				{
 					this.radioData.forEach(obj=>{
 						if(!obj.disable)
