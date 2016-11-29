@@ -33,14 +33,6 @@ import RoseRadio from './components/example/RoseRadio.vue'
 import RoseNumber from './components/example/RoseNumber.vue'
 //数量输入
 import RoseSwitch from './components/example/RoseSwitch.vue'
-//选择器
-import RoseSelect from './components/example/RoseSelect.vue'
-//级联选择
-import RoseCascader from './components/example/RoseCascader.vue'
-//日期选择
-import RoseDatepicker from './components/example/RoseDatepicker.vue'
-//树
-import RoseTree from './components/example/RoseTree.vue'
 
 
 
@@ -93,18 +85,6 @@ router.map({
 	},
 	'/example/rose-switch':{
 		component:RoseSwitch
-	},
-	'/example/rose-select':{
-		component:RoseSelect
-	},
-	'/example/rose-cascader':{
-		component:RoseCascader
-	},
-	'/example/rose-datepicker':{
-		component:RoseDatepicker
-	},
-	'/example/rose-tree':{
-		component:RoseTree
 	}
 })
 router.redirect({
