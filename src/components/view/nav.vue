@@ -12,7 +12,7 @@
 				<dt>通用组件<span>(common)</span></dt>
 				<dd><a v-link="{path:'../example/rose-table'}">表格<span>(rs-table)</span></a></dd>
 				<dd><a v-link="{path:'../example/rose-button'}">按钮<span>(rs-button)</span></a></dd>
-				<dd><a v-link="{path:'../example/rose-button'}">树<span>(rs-tree)</span><em>(未开发)</em></a></dd>
+				<dd><a v-link="{path:'../example/rose-tree'}">树<span>(rs-tree)</span></a></dd>
 				<dd><a v-link="{path:'../example/rose-button'}">下拉菜单<span>(rs-downmenu)</span><em>(未开发)</em></a></dd>
 				<dd><a v-link="{path:'../example/rose-button'}">分页标签<span>(rs-tab)</span><em>(未开发)</em></a></dd>
 				<dd><a v-link="{path:'../example/rose-button'}">盒子<span>(rs-box)</span><em>(未开发)</em></a></dd>
@@ -31,9 +31,9 @@
 				<dd><a v-link="{path:'../example/rose-radio'}">单选框<span>(rs-radio)</span></a></dd>
 				<dd><a v-link="{path:'../example/rose-number'}">数量输入<span>(rs-number)</span></a></dd>
 				<dd><a v-link="{path:'../example/rose-switch'}">开关<span>(rs-switch)</span></a></dd>
-				<dd><a v-link="{path:'../form/checkbox.vue'}">日期<span>(rs-datepicker)</span><em>(未开发)</em></a></dd>
-				<dd><a v-link="{path:'../form/checkbox.vue'}">选择器<span>(rs-select)</span><em>(未开发)</em></a></dd>
-				<dd><a v-link="{path:'../form/checkbox.vue'}">级联选择<span>(rs-cascader)</span><em>(未开发)</em></a></dd>
+				<dd><a v-link="{path:'../example/rose-datepicker'}">日期<span>(rs-datepicker)</span></a></dd>
+				<dd><a v-link="{path:'../example/rose-select'}">选择器<span>(rs-select)</span></a></dd>
+				<dd><a v-link="{path:'../example/rose-cascader'}">级联选择<span>(rs-cascader)</span></a></dd>
 			</dl>
 		<li>
 		<li>

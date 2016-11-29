@@ -1,0 +1,134 @@
+<template>
+	<div class="row">
+		<div class="col-sm-4">
+			<rs-select :select="selectData01"></rs-select>
+		</div>
+		<div class="col-sm-4">
+			<rs-select :select="selectData02"></rs-select>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4">
+			<rs-select :select="selectData03"></rs-select>
+		</div>
+		<div class="col-sm-4">
+			<rs-select :select="selectData04"></rs-select>
+		</div>
+	</div>
+</template>
+<script>
+	import RsSelect from '../form/RsSelect.vue'
+	export default{
+		data(){
+			return{
+				selectData01:{
+					label:'城市',
+					labelType:'head',
+					secondLabel:'(随便填)',
+					important:true,
+					default:"请选择所在城市",
+					search:true,
+					option:[
+						{
+							selected:true,
+							disabled:false,
+							value:'沈阳(ShenYang)',
+							id:1
+						},
+						{
+							selected:false,
+							disabled:false,
+							value:'北京(BeiJing)',
+							id:2
+						},
+						{
+							selected:false,
+							disabled:false,
+							value:'上海(Shanghai)',
+							id:3
+						},
+					]
+				},
+				selectData02:{
+					label:'国家',
+					labelType:'head',
+					default:"请选择所在国家",
+					option:[
+						{
+							selected:false,
+							disabled:false,
+							value:'CHINA',
+							id:1
+						},
+						{
+							selected:false,
+							disabled:false,
+							value:'USA',
+							id:2
+						},
+						{
+							selected:false,
+							disabled:false,
+							value:'JAPAN',
+							id:3
+						},
+					]
+				},
+				selectData03:{
+					label:'星球',
+					labelType:'line',
+					default:"请选择所在星球",
+					disable:true,
+					option:[
+						{
+							selected:true,
+							disabled:false,
+							value:'地球',
+							id:1
+						},
+						{
+							selected:false,
+							disabled:false,
+							value:'月球',
+							id:2
+						},
+						{
+							selected:false,
+							disabled:false,
+							value:'那美克星',
+							id:3
+						},
+					]
+				},
+				selectData04:{
+					label:'星系',
+					labelType:'line',
+					default:"选择星系",
+					option:[
+						{
+							selected:false,
+							disabled:false,
+							value:'太阳系',
+							id:1
+						},
+						{
+							selected:false,
+							disabled:false,
+							value:'比邻星系',
+							id:2
+						},
+						{
+							selected:false,
+							disabled:true,
+							value:'M78星云',
+							id:3
+						},
+					]
+				}
+			}
+		},
+		components:{
+			RsSelect
+		}
+	}
+</script>
