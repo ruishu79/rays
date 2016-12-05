@@ -4,8 +4,8 @@
       <nav class="navbar navbar-default l_deep">
         <div class="container">
           <a class="navbar-brand" href="#">
-            <i class="fa fa-leaf"></i>
-            rose框架
+            <i class="fa fa-flash"></i>
+            Rays-UI
           </a>
           <ul class="nav navbar-nav">
             <li><a v-link="'/home'">首页</a></li>

@@ -41,6 +41,14 @@ import RoseCascader from './components/example/RoseCascader.vue'
 import RoseDatepicker from './components/example/RoseDatepicker.vue'
 //树
 import RoseTree from './components/example/RoseTree.vue'
+//下拉菜单
+import RoseDownmenu from './components/example/RoseDownmenu.vue'
+//盒子
+import RoseBox from './components/example/RoseBox.vue'
+//分页标签
+import RoseTip from './components/example/RoseTip.vue'
+//进度条
+import RoseProgress from './components/example/RoseProgress.vue'
 
 
 
@@ -105,6 +113,18 @@ router.map({
 	},
 	'/example/rose-tree':{
 		component:RoseTree
+	},
+	'/example/rose-downmenu':{
+		component:RoseDownmenu
+	},
+	'/example/rose-box':{
+		component:RoseBox
+	},
+	'/example/rose-tip':{
+		component:RoseTip
+	},
+	'/example/rose-progress':{
+		component:RoseProgress
 	}
 })
 router.redirect({
