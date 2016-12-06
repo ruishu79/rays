@@ -13,12 +13,11 @@
 				<dd><a v-link="{path:'../example/rose-table'}">表格<span>(rs-table)</span></a></dd>
 				<dd><a v-link="{path:'../example/rose-button'}">按钮<span>(rs-button)</span></a></dd>
 				<dd><a v-link="{path:'../example/rose-tree'}">树<span>(rs-tree)</span></a></dd>
-				<dd><a v-link="{path:'../example/rose-button'}">下拉菜单<span>(rs-downmenu)</span><em>(未开发)</em></a></dd>
-				<dd><a v-link="{path:'../example/rose-button'}">分页标签<span>(rs-tab)</span><em>(未开发)</em></a></dd>
-				<dd><a v-link="{path:'../example/rose-button'}">盒子<span>(rs-box)</span><em>(未开发)</em></a></dd>
+				<dd><a v-link="{path:'../example/rose-downmenu'}">下拉菜单<span>(rs-downmenu)</span></a></dd>
+				<dd><a v-link="{path:'../example/rose-box'}">盒子<span>(rs-box)</span></a></dd>
 				<dd><a v-link="{path:'../example/rose-modal'}">弹框<span>(rs-message)</span></a></dd>
-				<dd><a v-link="{path:'../example/rose-button'}">提示框<span>(rs-tip)</span><em>(未开发)</em></a></dd>
-				<dd><a v-link="{path:'../example/rose-button'}">进度条<span>(rs-progress)</span><em>(未开发)</em></a></dd>
+				<dd><a v-link="{path:'../example/rose-tip'}">提示框<span>(rs-tip)</span></a></dd>
+				<dd><a v-link="{path:'../example/rose-progress'}">进度条<span>(rs-progress)</span></a></dd>
 				<dd><a v-link="{path:'../example/rose-button'}">时间线<span>(rs-timeline)</span><em>(未开发)</em></a></dd>
 				<dd><a v-link="{path:'../example/rose-button'}">标签<span>(rs-tag)</span><em>(未开发)</em></a></dd>
 			</dl>
