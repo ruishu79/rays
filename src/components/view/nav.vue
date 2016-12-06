@@ -18,7 +18,8 @@
 				<dd><a v-link="{path:'../example/rose-modal'}">弹框<span>(rs-message)</span></a></dd>
 				<dd><a v-link="{path:'../example/rose-tip'}">提示框<span>(rs-tip)</span></a></dd>
 				<dd><a v-link="{path:'../example/rose-progress'}">进度条<span>(rs-progress)</span></a></dd>
-				<dd><a v-link="{path:'../example/rose-button'}">时间线<span>(rs-timeline)</span><em>(未开发)</em></a></dd>
+				<dd><a v-link="{path:'../example/rose-button'}">
+				<dd><a v-link="{path:'../example/rays-timeline'}">时间线<span>(rs-timeline)</span></a></dd>
 				<dd><a v-link="{path:'../example/rose-button'}">标签<span>(rs-tag)</span><em>(未开发)</em></a></dd>
 			</dl>
 		</li>

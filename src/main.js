@@ -49,7 +49,8 @@ import RoseBox from './components/example/RoseBox.vue'
 import RoseTip from './components/example/RoseTip.vue'
 //进度条
 import RoseProgress from './components/example/RoseProgress.vue'
-
+//时间线
+import RaysTimeline from './components/example/RaysTimeline.vue'
 
 
 // 注册两个插件
@@ -125,6 +126,9 @@ router.map({
 	},
 	'/example/rose-progress':{
 		component:RoseProgress
+	},
+	'/example/rays-timeline':{
+		component:RaysTimeline
 	}
 })
 router.redirect({
