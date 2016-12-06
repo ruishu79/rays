@@ -4,8 +4,8 @@
       <nav class="navbar navbar-default l_deep">
         <div class="container">
           <a class="navbar-brand" href="#">
-            <i class="fa fa-flash"></i>
-            Rays-UI
+            <i class="fa fa-leaf"></i>
+            rose框架
           </a>
           <ul class="nav navbar-nav">
             <li><a v-link="'/home'">首页</a></li>
@@ -80,7 +80,6 @@ export default {
 html {
 
 }
-body{color: rgba(52,73,94,1)!important;}
 .l_deep{background-color: #1ABC9C!important;}
 .l_deep .navbar-nav > li > a{color: #fff!important;}
 .l_deep .navbar-brand{color: #fff!important;}
