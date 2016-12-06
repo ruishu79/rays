@@ -1,6 +1,6 @@
-# rose
+# rays
 
-> rui&shu frame project
+> rs frame project
 
 ## Build Setup
 
