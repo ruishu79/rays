@@ -1,6 +1,6 @@
 <template>
 	<div class="notification_list">
-		<div class="notification_wrap" v-for="(index,block) in noticeArray" v-if="block.text" transition="notification-act">
+		<div class="notification_wrap" v-for="(index,block) in noticeArray" v-show="block.text" transition="notification-act">
 			<div class="notification_state"><i class="fa" :class="block.state"></i></div>
 			<div class="notification_text">{{block.text}}</div>
 			<div class="notification_close"><i class="fa fa-close" title="关闭" @click="notificationClose(block,$index)"></i></div>

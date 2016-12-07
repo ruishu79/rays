@@ -51,6 +51,10 @@ import RoseTip from './components/example/RoseTip.vue'
 import RoseProgress from './components/example/RoseProgress.vue'
 //时间线
 import RaysTimeline from './components/example/RaysTimeline.vue'
+//标签
+import RaysTag from './components/example/RaysTag.vue'
+//标签
+import RaysBreadcrumb from './components/example/RaysBreadcrumb.vue'
 
 
 // 注册两个插件
@@ -129,6 +133,12 @@ router.map({
 	},
 	'/example/rays-timeline':{
 		component:RaysTimeline
+	},
+	'/example/rays-tag':{
+		component:RaysTag
+	},
+	'/example/rays-breadcrumb':{
+		component:RaysBreadcrumb
 	}
 })
 router.redirect({

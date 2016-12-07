@@ -20,7 +20,7 @@
 				<dd><a v-link="{path:'../example/rose-progress'}">进度条<span>(rs-progress)</span></a></dd>
 				<dd><a v-link="{path:'../example/rose-button'}">
 				<dd><a v-link="{path:'../example/rays-timeline'}">时间线<span>(rs-timeline)</span></a></dd>
-				<dd><a v-link="{path:'../example/rose-button'}">标签<span>(rs-tag)</span><em>(未开发)</em></a></dd>
+				<dd><a v-link="{path:'../example/rays-tag'}">标签<span>(rs-tag)</span></a></dd>
 			</dl>
 		</li>
 		<li>
@@ -39,9 +39,8 @@
 		<li>
 			<dl class="l_nav_list">
 				<dt>整体组件<span>(global)</span></dt>
-				<dd><a v-link="{path:'../example/rose-table'}">加载进度<span>(rs-loading)</span><em>(未开发)</em></a></dd>
 				<dd><a v-link="{path:'../example/rose-notification'}">通知<span>(rs-notification)</span></a></dd>
-				<dd><a v-link="{path:'../example/rose-button'}">面包屑<span>(rs-breadcrumb)</span><em>(未开发)</em></a></dd>
+				<dd><a v-link="{path:'../example/rays-breadcrumb'}">面包屑<span>(rs-breadcrumb)</span></a></dd>
 				<dd><a v-link="{path:'../example/rose-pagination'}">分页<span>(rs-pagination)</span></a></dd>
 			</dl>
 		</li>
