@@ -11,7 +11,7 @@
             <li><a v-link="'/home'">首页</a></li>
             <li><a v-link="'/time-entries'">起步</a></li>
             <li><a v-link="'/example/rose-table'">API</a></li>
-            <li><a v-link="'/example/rose-button'">示例</a></li>
+            <li><a v-link="'/view/example'">示例</a></li>
           </ul>
         </div>
       </nav>
@@ -76,6 +76,7 @@ export default {
 // }
 </script>
 
+<style src="./lib/highlight.js/styles/atom-one-light.css"></style>
 <style>
 html {
 

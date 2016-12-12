@@ -15,7 +15,6 @@
 				<dd><a v-link="{path:'../example/rose-tree'}">树<span>(rs-tree)</span></a></dd>
 				<dd><a v-link="{path:'../example/rose-downmenu'}">下拉菜单<span>(rs-downmenu)</span></a></dd>
 				<dd><a v-link="{path:'../example/rose-box'}">盒子<span>(rs-box)</span></a></dd>
-				<dd><a v-link="{path:'../example/rose-modal'}">弹框<span>(rs-message)</span></a></dd>
 				<dd><a v-link="{path:'../example/rose-tip'}">提示框<span>(rs-tip)</span></a></dd>
 				<dd><a v-link="{path:'../example/rose-progress'}">进度条<span>(rs-progress)</span></a></dd>
 				<dd><a v-link="{path:'../example/rose-button'}">
@@ -42,6 +41,7 @@
 				<dd><a v-link="{path:'../example/rose-notification'}">通知<span>(rs-notification)</span></a></dd>
 				<dd><a v-link="{path:'../example/rays-breadcrumb'}">面包屑<span>(rs-breadcrumb)</span></a></dd>
 				<dd><a v-link="{path:'../example/rose-pagination'}">分页<span>(rs-pagination)</span></a></dd>
+				<dd><a v-link="{path:'../example/rose-modal'}">弹框<span>(rs-message)</span></a></dd>
 			</dl>
 		</li>
 		<li>

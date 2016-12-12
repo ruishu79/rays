@@ -11,6 +11,8 @@ import Hello from './components/Hello.vue'
 import Home from './components/home.vue'
 import TimeEntries from './components/TimeEntries.vue'
 import LogTime from './components/LogTime.vue'
+import marked from 'marked'
+import highlight from 'highlight.js'
 
 /*组件样例*/
 //表格
@@ -57,10 +59,23 @@ import RaysTag from './components/example/RaysTag.vue'
 import RaysBreadcrumb from './components/example/RaysBreadcrumb.vue'
 
 
+//示例
+import example from './view/example.vue'
+
 // 注册两个插件
 Vue.use(VueResource)
 Vue.use(VueRouter)
 const router=new VueRouter()
+
+//代码展示
+marked.setOptions({
+    highlight: function (code) {
+        return window.highlight.highlightAuto(code).value
+    }
+})
+window.highlight = highlight
+window.marked = marked
+
 // 路由map
 router.map({
 	'/hello':{
@@ -139,6 +154,9 @@ router.map({
 	},
 	'/example/rays-breadcrumb':{
 		component:RaysBreadcrumb
+	},
+	'/view/example':{
+		component:example
 	}
 })
 router.redirect({
