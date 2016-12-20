@@ -39,7 +39,7 @@
 <template>
 	<div>
 		<ul class="rs_tree">
-			<li v-for="(index,node) in treeData">
+			<li v-for="(index,node) in data">
 				<div @click="childrenShow(node,$event,$index)" class="rs_tree_text">
 					<span class="rs_tree_dot" v-if="!isFolder(node)"></span>
 					<em class="fa fa-folder" v-if="isFolder(node)&&!node.isShow"></em>
@@ -54,7 +54,7 @@
 						<span @click="delItem(node,$event)" class="rs_del_del">删除</span>
 					</div> -->
 				</div>
-				<items v-if="isFolder(node)" v-show="node.isShow" :tree-data="node.children" transition="node-down"></items>
+				<items v-if="isFolder(node)" v-show="node.isShow" :data="node.children" transition="node-down"></items>
 			</li>
 		</ul>
 	</div>
@@ -71,7 +71,7 @@
 			}
 		},
 		props:{
-			treeData:Array
+			data:Array
 		},
 		components:{
 			
@@ -143,8 +143,8 @@
 				}
 				else
 				{
-					this.$set('treeData['+index+'].isShow',true);
-					this.$set('treeData['+index+'].children',[{
+					this.$set('data['+index+'].isShow',true);
+					this.$set('data['+index+'].children',[{
 						text : '新建文件',
 						add : true,
 						edit : true,
@@ -170,7 +170,7 @@
 			},
 			delItem(node,e){
 				e.stopPropagation();
-				this.treeData.$remove(node);
+				this.data.$remove(node);
 				this.editEnd();
 			},
 			editItem(node,e){

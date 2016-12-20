@@ -16,9 +16,9 @@ import highlight from 'highlight.js'
 
 /*组件样例*/
 //表格
-import RoseTable from './components/example/RoseTable.vue'
+import RaysTable from './components/example/RaysTable.vue'
 //按钮
-import RoseButton from './components/example/RoseButton.vue'
+import RaysButton from './components/example/RaysButton.vue'
 //复选框
 import checkbox from './components/form/checkbox.vue'
 //分页
@@ -42,7 +42,7 @@ import RoseCascader from './components/example/RoseCascader.vue'
 //日期选择
 import RoseDatepicker from './components/example/RoseDatepicker.vue'
 //树
-import RoseTree from './components/example/RoseTree.vue'
+import RaysTree from './components/example/RaysTree.vue'
 //下拉菜单
 import RoseDownmenu from './components/example/RoseDownmenu.vue'
 //盒子
@@ -92,11 +92,11 @@ router.map({
 			}
 		}
 	},
-	'/example/rose-table':{
-		component:RoseTable
+	'/example/rays-table':{
+		component:RaysTable
 	},
-	'/example/rose-button':{
-		component:RoseButton
+	'/example/rays-button':{
+		component:RaysButton
 	},
 	'/form/checkbox':{
 		component:checkbox
@@ -131,8 +131,8 @@ router.map({
 	'/example/rose-datepicker':{
 		component:RoseDatepicker
 	},
-	'/example/rose-tree':{
-		component:RoseTree
+	'/example/rays-tree':{
+		component:RaysTree
 	},
 	'/example/rose-downmenu':{
 		component:RoseDownmenu

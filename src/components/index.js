@@ -3,6 +3,7 @@
 //common通用组件
 import rsTable from './common/RsTable.vue'
 import rsButton from './common/RsButton.vue'
+import rsButtonGroup from './common/RsButtonGroup.vue'
 import rsTree from './common/RsTree.vue'
 import rsDownmenu from './common/RsDownmenu.vue'
 import rsBox from './common/RsBox.vue'
@@ -31,6 +32,7 @@ export {
 	//common通用组件
 	rsTable,
 	rsButton,
+	rsButtonGroup,
 	rsTree,
 	rsDownmenu,
 	rsBox,

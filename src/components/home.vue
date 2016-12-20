@@ -2,7 +2,7 @@
 	.homeBody{font-size: 14px; line-height: 2em; color: rgba(52,73,94,1); padding-bottom: 50px;}
 	.homeBody p{padding-left: 2em;}
 	.homeBody p strong{ color: #1ABC9C; margin: 0 3px; font-style: italic;}
-	.homeBody p em{ color: #1ABC9C; margin: 0 3px; font-style: normal;}
+	.homeBody p>em{ color: #1ABC9C; margin: 0 3px; font-style: normal;}
 	.homeBody h1,.homeBody h2,.homeBody h3,.homeBody h4,.homeBody h5{font-family: "Microsoft Yahei","微软雅黑";}
 	.homeBody h4{padding-left: 1em;}
 </style>
@@ -25,7 +25,7 @@
 			<p>1.下载安装 <a href="http://nodejs.cn/" target="_blank">npm</a></p>
 			<p>2.在github下载<a href="https://github.com/ruishu79/rays" target="_blank"> rays-ui </a>框架</p>
 			<p>3.运行<em>npm install</em>安装依赖文件</p>
-			<p>4.运行<em>npm run dev</em>运行框架</p>
+			<p>4.运行<em>npm run dev</em>开启本地开发服务器，监控项目文件的变化，实时构建并自动刷新浏览器,访问地址:<em>http://localhost:8080</em></p>
 		</div>
 		<h3>使用</h3>
 		<div><p>尝试使用一个最简单<strong>button</strong>按钮组件</p></div>

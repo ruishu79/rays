@@ -10,9 +10,9 @@
 		<li>
 			<dl class="l_nav_list">
 				<dt>通用组件<span>(common)</span></dt>
-				<dd><a v-link="{path:'../example/rose-table'}">表格<span>(rs-table)</span></a></dd>
-				<dd><a v-link="{path:'../example/rose-button'}">按钮<span>(rs-button)</span></a></dd>
-				<dd><a v-link="{path:'../example/rose-tree'}">树<span>(rs-tree)</span></a></dd>
+				<dd><a v-link="{path:'../example/rays-table'}">表格<span>(rs-table)</span></a></dd>
+				<dd><a v-link="{path:'../example/rays-button'}">按钮<span>(rs-button)</span></a></dd>
+				<dd><a v-link="{path:'../example/rays-tree'}">树<span>(rs-tree)</span></a></dd>
 				<dd><a v-link="{path:'../example/rose-downmenu'}">下拉菜单<span>(rs-downmenu)</span></a></dd>
 				<dd><a v-link="{path:'../example/rose-box'}">盒子<span>(rs-box)</span></a></dd>
 				<dd><a v-link="{path:'../example/rose-tip'}">提示框<span>(rs-tip)</span></a></dd>
