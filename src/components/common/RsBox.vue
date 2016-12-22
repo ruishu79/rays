@@ -1,5 +1,5 @@
 <style>
-	.rs_box_wrap{width: 100%; border: 1px solid #eaeaed;}
+	.rs_box_wrap{width: 100%; border: 1px solid #eaeaed; overflow: hidden;}
 	.rs_box_head{width: 100%; line-height: 20px; padding: 10px 15px; border-bottom: 1px solid #eaeaed; font-size: 14px; background: #f3f4f5;}
 	.rs_box_body{width: 100%; padding: 12px 15px 15px;}
 

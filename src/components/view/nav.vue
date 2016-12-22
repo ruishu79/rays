@@ -13,10 +13,10 @@
 				<dd><a v-link="{path:'../example/rays-table'}">表格<span>(rs-table)</span></a></dd>
 				<dd><a v-link="{path:'../example/rays-button'}">按钮<span>(rs-button)</span></a></dd>
 				<dd><a v-link="{path:'../example/rays-tree'}">树<span>(rs-tree)</span></a></dd>
-				<dd><a v-link="{path:'../example/rose-downmenu'}">下拉菜单<span>(rs-downmenu)</span></a></dd>
-				<dd><a v-link="{path:'../example/rose-box'}">盒子<span>(rs-box)</span></a></dd>
-				<dd><a v-link="{path:'../example/rose-tip'}">提示框<span>(rs-tip)</span></a></dd>
-				<dd><a v-link="{path:'../example/rose-progress'}">进度条<span>(rs-progress)</span></a></dd>
+				<dd><a v-link="{path:'../example/rays-downmenu'}">下拉菜单<span>(rs-downmenu)</span></a></dd>
+				<dd><a v-link="{path:'../example/rays-box'}">盒子<span>(rs-box)</span></a></dd>
+				<dd><a v-link="{path:'../example/rays-tip'}">提示框<span>(rs-tip)</span></a></dd>
+				<dd><a v-link="{path:'../example/rays-progress'}">进度条<span>(rs-progress)</span></a></dd>
 				<dd><a v-link="{path:'../example/rose-button'}">
 				<dd><a v-link="{path:'../example/rays-timeline'}">时间线<span>(rs-timeline)</span></a></dd>
 				<dd><a v-link="{path:'../example/rays-tag'}">标签<span>(rs-tag)</span></a></dd>

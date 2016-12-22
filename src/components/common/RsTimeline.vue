@@ -1,9 +1,11 @@
 <style>
 	.rs_timeline_list,.rs_timeline_item{list-style: none;}
-	.rs_timeline_item{position: relative; padding-bottom: 50px; line-height: 20px; font-size: 12px;}
+	.rs_timeline_item{position: relative; padding-bottom: 60px; line-height: 20px; font-size: 12px;}
 	.rs_timeline_item .fa{float: left; font-size: 17px;}
-	.rs_timeline_text{float: left; margin-left: 10px; margin-top: -1px;}
-	.rs_time_line{width: 0px; height: 38px; border-right: 1px solid #BDC3C7; position: absolute; left: 6px; top: 15px; }
+	.rs_timeline_content{float: left; margin-left: 10px; }
+	.rs_timeline_text{}
+	.rs_timeline_data{font-weight: bold; font-size: 14px; font-family: 'Arial'; line-height: 18px;}
+	.rs_time_line{width: 0px; height: 48px; border-right: 1px solid #BDC3C7; position: absolute; left: 6px; top: 15px; }
 	.rs_timeline_item:last-child .rs_time_line{display: none;}
 
 	.timeline_icon_primary{color: #3498DB;}
@@ -24,10 +26,14 @@
 <template>
 	<div>
 		<ul class="rs_timeline_list">
-			<li class="rs_timeline_item" v-for="item in rsData">
+			<li class="rs_timeline_item" v-for="item in data">
 				<div class="rs_time_line" :class="lineStyle(item)"></div>
 				<em class="fa" :class="iconStyle(item)"></em>
-				<span class="rs_timeline_text">{{item.text}}</span>
+				<div class="rs_timeline_content">
+					<div class="rs_timeline_data">{{item.date}}</div>
+					<div class="rs_timeline_text">{{item.text}}</div>
+				</div>
+				
 			</li>
 		</ul>
 	</div>
@@ -36,7 +42,7 @@
 <script>
 	export default{
 		props:{
-			rsData:Array
+			data:Array
 		},
 		methods:{
 			lineStyle:function(item){

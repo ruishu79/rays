@@ -44,13 +44,13 @@ import RoseDatepicker from './components/example/RoseDatepicker.vue'
 //树
 import RaysTree from './components/example/RaysTree.vue'
 //下拉菜单
-import RoseDownmenu from './components/example/RoseDownmenu.vue'
+import RaysDownmenu from './components/example/RaysDownmenu.vue'
 //盒子
-import RoseBox from './components/example/RoseBox.vue'
+import RaysBox from './components/example/RaysBox.vue'
 //分页标签
-import RoseTip from './components/example/RoseTip.vue'
+import RaysTip from './components/example/RaysTip.vue'
 //进度条
-import RoseProgress from './components/example/RoseProgress.vue'
+import RaysProgress from './components/example/RaysProgress.vue'
 //时间线
 import RaysTimeline from './components/example/RaysTimeline.vue'
 //标签
@@ -134,17 +134,17 @@ router.map({
 	'/example/rays-tree':{
 		component:RaysTree
 	},
-	'/example/rose-downmenu':{
-		component:RoseDownmenu
+	'/example/rays-downmenu':{
+		component:RaysDownmenu
 	},
-	'/example/rose-box':{
-		component:RoseBox
+	'/example/rays-box':{
+		component:RaysBox
 	},
-	'/example/rose-tip':{
-		component:RoseTip
+	'/example/rays-tip':{
+		component:RaysTip
 	},
-	'/example/rose-progress':{
-		component:RoseProgress
+	'/example/rays-progress':{
+		component:RaysProgress
 	},
 	'/example/rays-timeline':{
 		component:RaysTimeline
