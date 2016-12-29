@@ -14,7 +14,7 @@ import rsTag from './common/RsTag.vue'
 
 //from表单组件
 import rsInput from './form/RsInput.vue'
-import rsCheckbox from './form/checkbox.vue'
+import rsCheckbox from './form/RsCheckbox.vue'
 import rsRadio from './form/RsRadio.vue'
 import rsNumber from './form/RsNumber.vue'
 import rsSwitch from './form/RsSwitch.vue'

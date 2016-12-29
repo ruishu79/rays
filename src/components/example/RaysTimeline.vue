@@ -21,6 +21,7 @@
 				<p style="margin-top: 20px;">
 					<rs-timeline :data="timeData"></rs-timeline>
 				</p>
+				<p class="ps">时间线所有数据设置在<em>data</em>对象内</p>
 			</div>
 			<div class="col-sm-8">
 				<mark>

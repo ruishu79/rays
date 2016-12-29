@@ -20,7 +20,7 @@ import RaysTable from './components/example/RaysTable.vue'
 //按钮
 import RaysButton from './components/example/RaysButton.vue'
 //复选框
-import checkbox from './components/form/checkbox.vue'
+import RaysCheckbox from './components/example/RaysCheckbox.vue'
 //分页
 import RosePagination from './components/example/RosePagination.vue'
 //弹框
@@ -28,19 +28,19 @@ import RoseModal from './components/example/RoseModal.vue'
 //通知
 import RoseNotification from './components/example/RoseNotification.vue'
 //输入框
-import RoseInput from './components/example/RoseInput.vue'
+import RaysInput from './components/example/RaysInput.vue'
 //单选框
-import RoseRadio from './components/example/RoseRadio.vue'
+import RaysRadio from './components/example/RaysRadio.vue'
 //数量输入
-import RoseNumber from './components/example/RoseNumber.vue'
+import RaysNumber from './components/example/RaysNumber.vue'
 //数量输入
-import RoseSwitch from './components/example/RoseSwitch.vue'
+import RaysSwitch from './components/example/RaysSwitch.vue'
 //选择器
 import RoseSelect from './components/example/RoseSelect.vue'
 //级联选择
 import RoseCascader from './components/example/RoseCascader.vue'
 //日期选择
-import RoseDatepicker from './components/example/RoseDatepicker.vue'
+import RaysDatepicker from './components/example/RaysDatepicker.vue'
 //树
 import RaysTree from './components/example/RaysTree.vue'
 //下拉菜单
@@ -98,8 +98,8 @@ router.map({
 	'/example/rays-button':{
 		component:RaysButton
 	},
-	'/form/checkbox':{
-		component:checkbox
+	'/example/rays-checkbox':{
+		component:RaysCheckbox
 	},
 	'/example/rose-pagination':{
 		component:RosePagination
@@ -110,17 +110,17 @@ router.map({
 	'/example/rose-notification':{
 		component:RoseNotification
 	},
-	'/example/rose-input':{
-		component:RoseInput
+	'/example/rays-input':{
+		component:RaysInput
 	},
-	'/example/rose-radio':{
-		component:RoseRadio
+	'/example/rays-radio':{
+		component:RaysRadio
 	},
-	'/example/rose-number':{
-		component:RoseNumber
+	'/example/rays-number':{
+		component:RaysNumber
 	},
-	'/example/rose-switch':{
-		component:RoseSwitch
+	'/example/rays-switch':{
+		component:RaysSwitch
 	},
 	'/example/rose-select':{
 		component:RoseSelect
@@ -128,8 +128,8 @@ router.map({
 	'/example/rose-cascader':{
 		component:RoseCascader
 	},
-	'/example/rose-datepicker':{
-		component:RoseDatepicker
+	'/example/rays-datepicker':{
+		component:RaysDatepicker
 	},
 	'/example/rays-tree':{
 		component:RaysTree

@@ -20,6 +20,7 @@
     border-radius: 4px;
     cursor: pointer;
     top: 3px;
+    text-align: left;
 }
 .rs_checkbox_inner:hover{
     border: 1px solid #1ABC9C;
@@ -34,7 +35,7 @@
     opacity: 0;
     text-align: center;
     transition: opacity .2s;
-    margin-left: -6px;
+    margin-left: 2px;
     margin-top: 3px;
     cursor: pointer;
 }
@@ -50,8 +51,10 @@
 }
 
 .rs_checkbox_inner.disabled {
+    border: 1px solid #e6e6e6;
     background: #eaeaea;
 }
+.rs_checkbox_text{font-size: 12px; font-weight: normal; position: relative; top: -2px;}
 </style>
 <template>
     <label class="rs_checkbox_wrapper">
@@ -59,37 +62,37 @@
             <span 
                 class="rs_checkbox_inner"
                 :class="{
-                    'selected': checkbox.checked,
-                    'disabled': checkbox.disabled
+                    'selected': data.checked,
+                    'disabled': data.disabled
                 }"
             >
                 <i class="rs_checkbox_inner_icon fa fa-check"></i>
                 <input 
                     type="checkbox" 
-                    :value="checkbox.checked"
+                    :value="data.checked"
                     class="rs_checkbox_input"
                     @change="changeAction"
                 >
             </span>
-            <span>{{checkbox.text}}</span>
+            <span class="rs_checkbox_text">{{data.text}}</span>
         </div>
     </label>
 </template>
 <script>
 export default {
     props: {
-        checkbox: {
+        data: {
             type: Object,
             required: true
         }
     },
     methods: {
         changeAction () {
-            if (!this.checkbox.disabled) {
-                this.checkbox.checked = !this.checkbox.checked
+            if (!this.data.disabled) {
+                this.data.checked = !this.data.checked
             }
-            if (this.checkbox.change) {
-                this.checkbox.change()
+            if (this.data.change) {
+                this.data.change()
             }
             this.$dispatch('child-change')
         }

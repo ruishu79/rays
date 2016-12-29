@@ -24,13 +24,21 @@
 			}
 		},
 		props:{
-			switchdata:Object
+			switchdata:Object,
+			type:{
+				type:String,
+				default:'success'
+			},
+			state:{
+				type:Boolean,
+				default:false
+			}
 		},
 		computed:{
 			switchState(){
 				let style=[];
-				switch(this.switchdata.color){
-					case 'info':
+				switch(this.type){
+					case 'primary':
 						style.push("rs_switch_info")
 						break
 					case 'success':
@@ -45,7 +53,7 @@
 					default:
 						break
 				}
-				if(this.switchdata.state)
+				if(this.state)
 				{
 					style.push("rs_switch_on")
 				}
@@ -54,7 +62,7 @@
 		},
 		methods:{
 			switchAcht(){
-				this.switchdata.state=!this.switchdata.state;
+				this.state=!this.state;
 			}
 		}
 	}

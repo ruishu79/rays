@@ -20,20 +20,22 @@
 		<div class="col-sm-4">
 			<div class="col-sm-8">
 				<rs-downmenu text="通用组件">
-					<a v-link="{path:'../example/rose-table'}">表格</a>
-					<a v-link="{path:'../example/rose-button'}">按钮</a>
-					<a v-link="{path:'../example/rose-tree'}">树</a>
+					<a v-link="{path:'../example/rays-table'}">表格</a>
+					<a v-link="{path:'../example/rays-button'}">按钮</a>
+					<a v-link="{path:'../example/rays-tree'}">树</a>
 				</rs-downmenu>
 			</div>
+			<div class="clear"></div>
+			<p class="ps">最基础的下拉菜单</p>
 		</div>
 		<div class="col-sm-8">
 			<mark>
 <textarea class="rs-mark-text">
 	<template>
 		<rs-downmenu text="通用组件">
-			<a v-link="{path:'../example/rose-table'}">表格</a>
-			<a v-link="{path:'../example/rose-button'}">按钮</a>
-			<a v-link="{path:'../example/rose-tree'}">树</a>
+			<a v-link="{path:'../example/rays-table'}">表格</a>
+			<a v-link="{path:'../example/rays-button'}">按钮</a>
+			<a v-link="{path:'../example/rays-tree'}">树</a>
 		</rs-downmenu>
 	</template>
 </textarea>
@@ -45,30 +47,32 @@
 		<div class="col-sm-4">
 			<div class="col-sm-8">
 				<rs-downmenu text="表单组件" display="block">
-					<a v-link="{path:'../example/rose-input'}">输入框</a>
-					<a v-link="{path:'../example/rose-radio'}">单选框</a>
-					<a v-link="{path:'../example/rose-cascader'}">级联选择</a>
-					<a v-link="{path:'../example/rose-checkbox'}">复选框</a>
-					<a v-link="{path:'../example/rose-number'}">数量输入</a>
-					<a v-link="{path:'../example/rose-switch'}">开关</a>
-					<a v-link="{path:'../example/rose-datepicker'}">日期</a>
-					<a v-link="{path:'../example/rose-select'}">选择器</a>
+					<a v-link="{path:'../example/rays-input'}">输入框</a>
+					<a v-link="{path:'../example/rays-radio'}">单选框</a>
+					<a v-link="{path:'../example/rays-cascader'}">级联选择</a>
+					<a v-link="{path:'../example/rays-checkbox'}">复选框</a>
+					<a v-link="{path:'../example/rays-number'}">数量输入</a>
+					<a v-link="{path:'../example/rays-switch'}">开关</a>
+					<a v-link="{path:'../example/rays-datepicker'}">日期</a>
+					<a v-link="{path:'../example/rays-select'}">选择器</a>
 				</rs-downmenu>
 			</div>
+			<div class="clear"></div>
+			<p class="ps">如果拥有很多的二级菜单,那么推荐使用块状菜单,每行4个菜单项</p>
 		</div>
 		<div class="col-sm-8">
 			<mark>
 <textarea class="rs-mark-text">
 	<template>
 		<rs-downmenu text="表单组件" display="block">
-			<a v-link="{path:'../example/rose-input'}">输入框</a>
-			<a v-link="{path:'../example/rose-radio'}">单选框</a>
-			<a v-link="{path:'../example/rose-cascader'}">级联选择</a>
-			<a v-link="{path:'../example/rose-checkbox'}">复选框</a>
-			<a v-link="{path:'../example/rose-number'}">数量输入</a>
-			<a v-link="{path:'../example/rose-switch'}">开关</a>
-			<a v-link="{path:'../example/rose-datepicker'}">日期</a>
-			<a v-link="{path:'../example/rose-select'}">选择器</a>
+			<a v-link="{path:'../example/rays-input'}">输入框</a>
+			<a v-link="{path:'../example/rays-radio'}">单选框</a>
+			<a v-link="{path:'../example/rays-cascader'}">级联选择</a>
+			<a v-link="{path:'../example/rays-checkbox'}">复选框</a>
+			<a v-link="{path:'../example/rays-number'}">数量输入</a>
+			<a v-link="{path:'../example/rays-switch'}">开关</a>
+			<a v-link="{path:'../example/rays-datepicker'}">日期</a>
+			<a v-link="{path:'../example/rays-select'}">选择器</a>
 		</rs-downmenu>
 	</template>
 </textarea>
@@ -81,24 +85,26 @@
 			<div class="row downmenu_bar_green">
 				<div class="col-sm-6">
 					<rs-downmenu text="通用组件">
-						<a v-link="{path:'../example/rose-table'}">表格</a>
-						<a v-link="{path:'../example/rose-button'}">按钮</a>
-						<a v-link="{path:'../example/rose-tree'}">树</a>
+						<a v-link="{path:'../example/rays-table'}">表格</a>
+						<a v-link="{path:'../example/rays-button'}">按钮</a>
+						<a v-link="{path:'../example/rays-tree'}">树</a>
 					</rs-downmenu>
 				</div>
 				<div class="col-sm-6">
 					<rs-downmenu text="表单组件" display="block">
-						<a v-link="{path:'../example/rose-input'}">输入框</a>
-						<a v-link="{path:'../example/rose-radio'}">单选框</a>
-						<a v-link="{path:'../example/rose-cascader'}">级联选择</a>
-						<a v-link="{path:'../example/rose-checkbox'}">复选框</a>
-						<a v-link="{path:'../example/rose-number'}">数量输入</a>
-						<a v-link="{path:'../example/rose-switch'}">开关</a>
-						<a v-link="{path:'../example/rose-datepicker'}">日期</a>
-						<a v-link="{path:'../example/rose-select'}">选择器</a>
+						<a v-link="{path:'../example/rays-input'}">输入框</a>
+						<a v-link="{path:'../example/rays-radio'}">单选框</a>
+						<a v-link="{path:'../example/rays-cascader'}">级联选择</a>
+						<a v-link="{path:'../example/rays-checkbox'}">复选框</a>
+						<a v-link="{path:'../example/rays-number'}">数量输入</a>
+						<a v-link="{path:'../example/rays-switch'}">开关</a>
+						<a v-link="{path:'../example/rays-datepicker'}">日期</a>
+						<a v-link="{path:'../example/rays-select'}">选择器</a>
 					</rs-downmenu>
 				</div>
 			</div>
+			<div class="clear"></div>
+			<p class="ps">如果需要一个组合的导航,需要自行设置区域及背景色,之后将多个下拉菜单放入其中</p>
 		</div>
 		<div class="col-sm-8">
 			<mark>
@@ -107,21 +113,21 @@
 	<div class="row downmenu_bar_green">
 		<div class="col-sm-6">
 			<rs-downmenu text="通用组件">
-				<a v-link="{path:'../example/rose-table'}">表格</a>
-				<a v-link="{path:'../example/rose-button'}">按钮</a>
-				<a v-link="{path:'../example/rose-tree'}">树</a>
+				<a v-link="{path:'../example/rays-table'}">表格</a>
+				<a v-link="{path:'../example/rays-button'}">按钮</a>
+				<a v-link="{path:'../example/rays-tree'}">树</a>
 			</rs-downmenu>
 		</div>
 		<div class="col-sm-6">
 			<rs-downmenu text="表单组件" display="block">
-				<a v-link="{path:'../example/rose-input'}">输入框</a>
-				<a v-link="{path:'../example/rose-radio'}">单选框</a>
-				<a v-link="{path:'../example/rose-cascader'}">级联选择</a>
-				<a v-link="{path:'../example/rose-checkbox'}">复选框</a>
-				<a v-link="{path:'../example/rose-number'}">数量输入</a>
-				<a v-link="{path:'../example/rose-switch'}">开关</a>
-				<a v-link="{path:'../example/rose-datepicker'}">日期</a>
-				<a v-link="{path:'../example/rose-select'}">选择器</a>
+				<a v-link="{path:'../example/rays-input'}">输入框</a>
+				<a v-link="{path:'../example/rays-radio'}">单选框</a>
+				<a v-link="{path:'../example/rays-cascader'}">级联选择</a>
+				<a v-link="{path:'../example/rays-checkbox'}">复选框</a>
+				<a v-link="{path:'../example/rays-number'}">数量输入</a>
+				<a v-link="{path:'../example/rays-switch'}">开关</a>
+				<a v-link="{path:'../example/rays-datepicker'}">日期</a>
+				<a v-link="{path:'../example/rays-select'}">选择器</a>
 			</rs-downmenu>
 		</div>
 	</div>

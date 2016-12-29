@@ -13,13 +13,13 @@
 .rs_input_error:focus,.rs_input_error:hover{border: 1px solid #E74C3C; box-shadow: none;}
 .rs_input_disable{background: #ECF0F1; cursor: not-allowed!important;}
 .rs_input_disable:focus,.rs_input_disable:hover{border: 1px solid #eaeaed; box-shadow: none;}
-.rs_input_label_head{font-weight: normal; font-size: 12px; padding-left: 6px;}
+.rs_input_label_head{font-weight: normal; font-size: 12px; padding-left: 6px; margin-bottom: 0;}
 .rs_input_label_line{font-weight: normal; float: left; width: 30%; text-align: right; padding-right: 10px; line-height: 32px; font-size: 12px; margin-bottom: 0;}
 .rs_input_label_head .rs_input_second_label{margin-left: 8px; color: #95A5A6;}
 .rs_input_label_line .rs_input_second_label{margin-left: 3px; color: #95A5A6;}
 .rs_input_important{margin-left: 3px; color: #E74C3C; font-size: 14px; position: relative; top: 3px; font-weight: bold;}
 .rs_input_line{width: 70%; float: left;}
-.rs_input_state_icon{position: absolute; right: 6px; top: 32px; width: 18px; height: 18px; line-height: 18px; font-size: 18px;}
+.rs_input_state_icon{position: absolute; right: 6px; top: 36px; width: 18px; height: 18px; line-height: 18px; font-size: 18px;}
 .fa_nohead{top:7px;}
 .rs_input_tip{font-size: 12px; color: #95A5A6; line-height: 24px; padding-left: 6px; margin-bottom: 0;}
 .infoColor{color: #3498DB;}

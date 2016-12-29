@@ -28,6 +28,7 @@
 					<rs-button type="warning">提醒按钮</rs-button>
 					<rs-button type="error">警告按钮</rs-button>
 				</p>
+				<p class="ps">按钮文本直接写在<em>rs-button</em>内,也可以加type属性进行配色</p>
 			</div>
 		</div>
 		<div class="col-sm-8">
@@ -60,6 +61,7 @@
 				<p>
 					<rs-button type="primary" size="small">小尺寸</rs-button>
 				</p>
+				<p class="ps"><em>size</em>属性可以设置不同大小的按钮</p>
 			</div>
 		</div>
 		<div class="col-sm-8">
@@ -91,6 +93,7 @@
 					<rs-button type="primary" icon="upload" icon-text="上传"></rs-button>
 				</p>
 				<p><rs-button icon="spinner" icon-text="保存中" :loading="true"></rs-button></p>
+				<p class="ps">加入图标后,文本信息不能再写在标签内,需要添加<em>icon-text</em>属性进行文本设置,需要特别注意</p>
 			</div>
 		</div>
 		<div class="col-sm-8">
@@ -118,6 +121,7 @@
 					<rs-button :disable="true">禁用按钮</rs-button>
 					<rs-button icon="check" :disable="true"></rs-button>
 				</p>
+				<p class="ps">设置<em>disable</em>为<em>true</em>即可禁用当前按钮</p>
 			</div>
 		</div>
 		<div class="col-sm-8">
@@ -141,6 +145,7 @@
 						<rs-button>减少</rs-button>
 					</rs-button-group>
 				</p>
+				<p class="ps">这里需要引入<em>rs-button-group</em>组件,将需要的<em>rs-button</em>包括其中即可完成组合</p>
 			</div>
 		</div>
 		<div class="col-sm-8">

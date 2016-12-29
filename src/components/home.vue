@@ -5,6 +5,13 @@
 	.homeBody p>em{ color: #1ABC9C; margin: 0 3px; font-style: normal;}
 	.homeBody h1,.homeBody h2,.homeBody h3,.homeBody h4,.homeBody h5{font-family: "Microsoft Yahei","微软雅黑";}
 	.homeBody h4{padding-left: 1em;}
+	.ps{line-height: 20px; margin-top: 22px; padding-left: 2em;}
+	.example_body{font-size: 14px; line-height: 2em; color: rgba(52,73,94,1); padding-bottom: 50px;}
+	.example_body .col-sm-4>p,.example_body>p,.ex_content>p{padding-left: 2em;}
+	.example_body p strong{ color: #1ABC9C; margin: 0 3px; font-style: italic;}
+	.example_body p>em{ color: #1ABC9C; margin: 0 3px; font-style: normal;}
+	.example_body h1,.example_body h2,.example_body h3,.example_body h4,.example_body h5{font-family: "Microsoft Yahei","微软雅黑";}
+	.example_body h4{padding-left: 1em; margin-top: 15px;}
 </style>
 <template>
 	<div class="homeBody">

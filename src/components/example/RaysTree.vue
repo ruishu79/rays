@@ -20,6 +20,7 @@
 			<div class="col-sm-4">
 				<div class="ex_content">
 					<p><rs-tree :data="treeDate01"></rs-tree></p>
+					<p class="ps">基础的树形组件,所有数据都放到<em>data</em>对象中</p>
 				</div>
 			</div>
 			<div class="col-sm-8">
@@ -62,6 +63,7 @@
 			<div class="col-sm-4">
 				<div class="ex_content">
 					<p><rs-tree :data="treeDate02"></rs-tree></p>
+					<p class="ps">在<em>data</em>对象中的<em>children</em>属性,添加如第一层的结构即可无限向下添加更多的层级</p>
 				</div>
 			</div>
 			<div class="col-sm-8">
@@ -121,6 +123,7 @@
 			<div class="col-sm-4">
 				<div class="ex_content">
 					<p><rs-tree :data="treeDate03"></rs-tree></p>
+					<p>通过设置<em>add / edit / del</em>属性来添加各个节点的新建/编辑/删除功能,新建的节点将默认拥有这三个功能</p>
 				</div>
 			</div>
 			<div class="col-sm-8">

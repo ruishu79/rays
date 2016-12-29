@@ -9,9 +9,9 @@
 </style>
 <template>
 	<div class="rs_number_wrap">
-		<div class="rs_numBtn rs_num_left" @click="decFunc()" :class="{'rs_num_disable':decDisable}"><i class="fa fa-minus"></i></div>
+		<div class="rs_numBtn rs_num_left" @mouseup="decFunc()" :class="{'rs_num_disable':decDisable}"><i class="fa fa-minus"></i></div>
 		<input type="text" class="rs_number_input" v-model="num" @change="range()">
-		<div class="rs_numBtn rs_num_right" @click="addFunc()" :class="{'rs_num_disable':addDisable}"><i class="fa fa-plus"></i></div>
+		<div class="rs_numBtn rs_num_right" @mouseup="addFunc()" :class="{'rs_num_disable':addDisable}"><i class="fa fa-plus"></i></div>
 	</div>
 </template>
 <script>

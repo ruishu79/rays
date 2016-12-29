@@ -20,6 +20,7 @@
 			<div class="col-sm-4">
 				<p><rs-tag>标签一</rs-tag><rs-tag type="primary">标签二</rs-tag><rs-tag type="success">标签三</rs-tag></p>
 				<p><rs-tag type="warning">标签四</rs-tag><rs-tag type="error">标签五</rs-tag></p>
+				<p class="ps">标签文本信息,写在<em>rs-tag</em>标签内</p>
 			</div>
 			<div class="col-sm-8">
 				<mark>
@@ -40,6 +41,7 @@
 			<div class="col-sm-4">
 				<p><rs-tag icon="cog">标签六</rs-tag><rs-tag type="primary" icon="cloud">标签七</rs-tag><rs-tag type="success" icon="trophy">标签八</rs-tag></p>
 				<p><rs-tag type="warning" icon="star">标签九</rs-tag><rs-tag type="error" icon="times-circle">标签十</rs-tag></p>
+				<p class="ps">设置<em>icon</em>属性,在标签文本前加图标,具体属性值请参看图标组件</p>
 			</div>
 			<div class="col-sm-8">
 				<mark>
@@ -100,7 +102,7 @@
 							attr: 'icon',
 							instruction: '标签文本前添加图标,具体图请参看图标组件',
 							type: 'String',
-							default: '空',
+							default: '空 ',
 						},
 					]
 				},

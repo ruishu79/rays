@@ -9,7 +9,7 @@
 			<thead>
 				<tr>
 					<th v-if="setOption.check" class="check_column">
-						<rs-checkbox :checkbox="selectAll" @child-change="allCheck"></rs-checkbox>
+						<rs-checkbox :data="selectAll" @child-change="allCheck"></rs-checkbox>
 					</th>
 					<th v-for="col in data.columns" @click="toSort(col)" :class="{'sortcss' : col.sort, 'sortact' : sortFun == col.key}">{{col.value}}<span v-if="col.sort && (sortOrder[col.key]==1)" class="fa fa-angle-down sort_icon"></span><span v-if="col.sort && (sortOrder[col.key]==-1)" class="fa fa-angle-up sort_icon"></span></th>
 					<th v-if="data.control">操作</th>
@@ -18,7 +18,7 @@
 			<tbody>
 				<tr v-for="(parentIndex,row) in tableList | filterBy searchQuery | orderBy sortKey sortOrder[sortFun]">
 					<td v-if="setOption.check" class="check_column">
-						<rs-checkbox :checkbox="row.checkbox" v-on:child-change="checkNumChange"></rs-checkbox>
+						<rs-checkbox :data="row.checkbox" v-on:child-change="checkNumChange"></rs-checkbox>
 					</td>
 					<td v-for="val in data.columns">{{{row[val.key]}}}</td>
 					<td v-if="data.control">
@@ -30,12 +30,11 @@
 		<div class="clear mb10" v-if="setOption.pagination">
 			<rs-pagination v-ref:page :async="false" :data="data.tdDate" :len.sync="setOption.len" :lens="setOption.lenArr" :page-len="setOption.pageLen" :active-num.sync="setOption.activeNum"></rs-pagination>
 		</div>
-		
 		<rs-notification :notice="notification" v-if="setOption.delBtn"></rs-notification>
 	</div>
 </template>
 <script>
-	import rsCheckbox from '../form/checkbox.vue'
+	import rsCheckbox from '../form/RsCheckbox.vue'
 	import rsButton from '../common/RsButton.vue'
 	import rsPagination from '../global/RsPagination.vue'
 	import RsNotification from '../global/RsNotification.vue'

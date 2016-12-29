@@ -81,6 +81,7 @@
   overflow: hidden;
   position: absolute;
   font-size: 12px;
+  line-height: 18px;
   display: block;
   width: 240px;
   z-index: 999;
@@ -697,6 +698,7 @@ export default {
         this.nextMonth(obj.action)
       }
       if (this.dateType === 'day' || this.dateType === 'min') {
+        //console.log(this.dateType);
         this.dayList.forEach((x) => {
           x.checked = false
         })
@@ -711,6 +713,7 @@ export default {
         this.checked.min='00';
         this.checked.hour='00';
       } else {
+        //console.log(this.dateType);
         let day = this.pad(obj.value)
         let ctime = this.checked.year + '-' + this.checked.month + '-' + day
         if (obj.checked === true) {

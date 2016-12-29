@@ -1,10 +1,4 @@
 <style>
-	.example_body{font-size: 14px; line-height: 2em; color: rgba(52,73,94,1); padding-bottom: 50px;}
-	.example_body p{padding-left: 2em;}
-	.example_body p strong{ color: #1ABC9C; margin: 0 3px; font-style: italic;}
-	.example_body p>em{ color: #1ABC9C; margin: 0 3px; font-style: normal;}
-	.example_body h1,.example_body h2,.example_body h3,.example_body h4,.example_body h5{font-family: "Microsoft Yahei","微软雅黑";}
-	.example_body h4{padding-left: 1em; margin-top: 15px;}
 	.sample_line{padding-top: 30px; border-top: 1px dashed #EAEAED;}
 	.api_code{padding: 3px 4px; background: #F6F7F8; border-radius: 4px; margin-bottom: 5px; border: 1px solid #EAEAED;}
 	.api_p{padding-left: 0!important; margin: 8px 0;}
@@ -490,15 +484,20 @@
 	import {rsTable} from 'rays'
 	import {rsNotification} from 'rays'
 	import {rsButton} from 'rays'
+	import {rsCheckbox} from 'rays'
 	export default{
 		components:{
 			Mark,
 			rsTable,
 			rsNotification,
-			rsButton
+			rsButton,
+			rsCheckbox
 		},
 		data(){
 			return{
+				check01:{
+					checked:true
+				},
 				codeBox1:false,
 				codeBtn1:"显示代码",
 				codeBox2:false,

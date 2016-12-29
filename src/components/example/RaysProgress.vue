@@ -27,6 +27,7 @@
 				<p style="overflow: hidden;">
 					<rs-progress :percent="100" type="error"></rs-progress>
 				</p>
+				<p class="ps">基础的进度条,可设置初始位置及风格样式</p>
 			</div>
 			<div class="col-sm-8">
 				<mark>
@@ -47,6 +48,7 @@
 				<p style="overflow: hidden;">
 					<rs-progress :percent="actPer" :type="actType" @click="act()"></rs-progress>
 				</p>
+				<p class="ps">进度条的动画及触发事件,需自定义</p>
 			</div>
 			<div class="col-sm-8">
 				<mark>

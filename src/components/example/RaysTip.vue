@@ -38,6 +38,7 @@
 						<span>鼠标移动到这里(右)</span>
 					</rs-tip>
 				</p>
+				<p class="ps">将需要添加提示的内容放入<em>rs-tip</em>标签内,即可完成内容的提示</p>
 			</div>
 			<div class="col-sm-8">
 				<mark>
@@ -83,6 +84,7 @@
 						<rs-button type="primary">按钮-右方显示</rs-button>
 					</rs-tip>
 				</p>
+				<p class="ps">组件同样可以添加进<em>rs-tip</em>标签内,通过<em>align</em>属性确定提示的位置,并且可以通过<em>left / top</em>属性对提示的位置进行调整</p>
 			</div>
 			<div class="col-sm-8">
 				<mark>

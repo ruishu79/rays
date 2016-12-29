@@ -25,12 +25,12 @@
 		<li>
 			<dl class="l_nav_list">
 				<dt>表单组件<span>(form)</span></dt>
-				<dd><a v-link="{path:'../example/rose-input'}">输入框<span>(rs-input)</span></a></dd>
-				<dd><a v-link="{path:'../form/checkbox.vue'}">复选框<span>(rs-checkbox)</span></a></dd>
-				<dd><a v-link="{path:'../example/rose-radio'}">单选框<span>(rs-radio)</span></a></dd>
-				<dd><a v-link="{path:'../example/rose-number'}">数量输入<span>(rs-number)</span></a></dd>
-				<dd><a v-link="{path:'../example/rose-switch'}">开关<span>(rs-switch)</span></a></dd>
-				<dd><a v-link="{path:'../example/rose-datepicker'}">日期<span>(rs-datepicker)</span></a></dd>
+				<dd><a v-link="{path:'../example/rays-input'}">输入框<span>(rs-input)</span></a></dd>
+				<dd><a v-link="{path:'../example/rays-checkbox'}">复选框<span>(rs-checkbox)</span></a></dd>
+				<dd><a v-link="{path:'../example/rays-radio'}">单选框<span>(rs-radio)</span></a></dd>
+				<dd><a v-link="{path:'../example/rays-number'}">数量输入<span>(rs-number)</span></a></dd>
+				<dd><a v-link="{path:'../example/rays-switch'}">开关<span>(rs-switch)</span></a></dd>
+				<dd><a v-link="{path:'../example/rays-datepicker'}">日期<span>(rs-datepicker)</span></a></dd>
 				<dd><a v-link="{path:'../example/rose-select'}">选择器<span>(rs-select)</span></a></dd>
 				<dd><a v-link="{path:'../example/rose-cascader'}">级联选择<span>(rs-cascader)</span></a></dd>
 			</dl>
