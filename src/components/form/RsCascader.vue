@@ -54,15 +54,15 @@
 </style>
 <template>
 	<div>
-		<label v-if="cascader.labelType=='line'&&cascader.label" class="rs_cascader_label_line">{{cascader.label}}<span class="rs_cascader_second_label" v-if="cascader.secondLabel">{{cascader.secondLabel}}</span><span class="rs_cascader_important" v-if="cascader.important">*</span></label>
-        <label v-if="cascader.labelType=='head'&&cascader.label" class="rs_cascader_label_head">{{cascader.label}}<span class="rs_cascader_second_label" v-if="cascader.secondLabel">{{cascader.secondLabel}}</span><span class="rs_cascader_important" v-if="cascader.important">*</span></label>
-		<div class="rs_cascader_wrap" @click="openCascader()" :class="{'rs_cascader_disable':cascader.disable}">
+		<label v-if="data.labelType=='line'&&data.label" class="rs_cascader_label_line">{{data.label}}<span class="rs_cascader_second_label" v-if="data.secondLabel">{{data.secondLabel}}</span><span class="rs_cascader_important" v-if="data.important">*</span></label>
+        <label v-if="data.labelType=='head'&&data.label" class="rs_cascader_label_head">{{data.label}}<span class="rs_cascader_second_label" v-if="data.secondLabel">{{data.secondLabel}}</span><span class="rs_cascader_important" v-if="data.important">*</span></label>
+		<div class="rs_cascader_wrap" @click="openCascader()" :class="{'rs_cascader_disable':data.disable}">
 			<div class="rs_cascader_text">
-				<span v-if="cascaderText.length==0">{{cascader.default}}</span>
-				<span>{{cascaderText.join(cascader.join)}}</span>
+				<span v-if="cascaderText.length==0">{{data.default}}</span>
+				<span>{{cascaderText.join(data.join)}}</span>
 			</div>
 			<div class="rs_cascader_arrow"><i class="fa fa-angle-down"></i></div>
-			<div class="rs_cascader_big_wrap" v-show="selecting"  v-if="!(cascader.disable)" transition="select-down">
+			<div class="rs_cascader_big_wrap" v-show="selecting"  v-if="!(data.disable)" transition="select-down">
 				<div class="rs_cascader_option_wrap" :style="{height:maxNum*32+'px'}">
 					<ul class="rs_cascader_list" v-for="(col,group) in list">
 						<li v-for="(row,op) in group" @click="cascaderNext(col,row,op,$event)" :class="{'rs_cascader_select':op.select,'rs_cascader_option_disable':op.disable}">{{op.label}}</li>
@@ -96,15 +96,15 @@
 		},
 		ready(){
 			let baseList=[]
-			this.cascader.option.forEach(op=>{
+			this.data.option.forEach(op=>{
 				baseList.push({label:op.label,value:op.value,select:false,disable:op.disable})
 			});
-			this.maxNum=this.cascader.option.length;
+			this.maxNum=this.data.option.length;
 			this.list.push(baseList);
 			window.addEventListener('click',this.close,true);	
 		},
 		props:{
-			cascader:Object
+			data:Object
 		},
 		computed:{
 
@@ -128,7 +128,7 @@
 				else{
 					e.stopPropagation();
 					let childrenList=[];
-					let next=this.cascader.option;
+					let next=this.data.option;
 					this.list.splice(col+1,this.list.length-col-1);
 					this.cascaderIndex.splice(col,this.cascaderIndex.length-col);
 					this.cascaderText.splice(col,this.cascaderText.length-col);

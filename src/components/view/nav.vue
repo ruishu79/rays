@@ -31,8 +31,8 @@
 				<dd><a v-link="{path:'../example/rays-number'}">数量输入<span>(rs-number)</span></a></dd>
 				<dd><a v-link="{path:'../example/rays-switch'}">开关<span>(rs-switch)</span></a></dd>
 				<dd><a v-link="{path:'../example/rays-datepicker'}">日期<span>(rs-datepicker)</span></a></dd>
-				<dd><a v-link="{path:'../example/rose-select'}">选择器<span>(rs-select)</span></a></dd>
-				<dd><a v-link="{path:'../example/rose-cascader'}">级联选择<span>(rs-cascader)</span></a></dd>
+				<dd><a v-link="{path:'../example/rays-select'}">选择器<span>(rs-select)</span></a></dd>
+				<dd><a v-link="{path:'../example/rays-cascader'}">级联选择<span>(rs-cascader)</span></a></dd>
 			</dl>
 		<li>
 		<li>

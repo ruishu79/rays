@@ -36,9 +36,9 @@ import RaysNumber from './components/example/RaysNumber.vue'
 //数量输入
 import RaysSwitch from './components/example/RaysSwitch.vue'
 //选择器
-import RoseSelect from './components/example/RoseSelect.vue'
+import RaysSelect from './components/example/RaysSelect.vue'
 //级联选择
-import RoseCascader from './components/example/RoseCascader.vue'
+import RaysCascader from './components/example/RaysCascader.vue'
 //日期选择
 import RaysDatepicker from './components/example/RaysDatepicker.vue'
 //树
@@ -122,11 +122,11 @@ router.map({
 	'/example/rays-switch':{
 		component:RaysSwitch
 	},
-	'/example/rose-select':{
-		component:RoseSelect
+	'/example/rays-select':{
+		component:RaysSelect
 	},
-	'/example/rose-cascader':{
-		component:RoseCascader
+	'/example/rays-cascader':{
+		component:RaysCascader
 	},
 	'/example/rays-datepicker':{
 		component:RaysDatepicker

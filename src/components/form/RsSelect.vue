@@ -35,20 +35,20 @@
 </style>
 <template>
 	<div>
-		<label v-if="select.labelType=='line'&&select.label" class="rs_select_label_line">{{select.label}}<span class="rs_select_second_label" v-if="select.secondLabel">{{select.secondLabel}}</span><span class="rs_select_important" v-if="select.important">*</span></label>
-        <label v-if="select.labelType=='head'&&select.label" class="rs_select_label_head">{{select.label}}<span class="rs_select_second_label" v-if="select.secondLabel">{{select.secondLabel}}</span><span class="rs_select_important" v-if="select.important">*</span></label>
+		<label v-if="data.labelType=='line'&&data.label" class="rs_select_label_line">{{data.label}}<span class="rs_select_second_label" v-if="data.secondLabel">{{data.secondLabel}}</span><span class="rs_select_important" v-if="data.important">*</span></label>
+        <label v-if="data.labelType=='head'&&data.label" class="rs_select_label_head">{{data.label}}<span class="rs_select_second_label" v-if="data.secondLabel">{{data.secondLabel}}</span><span class="rs_select_important" v-if="data.important">*</span></label>
 		<div class="rs_select_wrap" :class="mainStyle" @click="toSelect($event)">
 			<div class="rs_select_text">
 				<span>{{selectFocus}}</span>
 			</div>
 			<div class="rs_select_arrow"><i class="fa fa-angle-down"></i></div>
-			<div class="rs_option_wrap" v-show="selecting" transition="select-down" v-if="!(select.disable)">
-				<div class="rs_select_search" v-if="select.search">
+			<div class="rs_option_wrap" v-show="selecting" transition="select-down" v-if="!(data.disabled)">
+				<div class="rs_select_search" v-if="data.search">
 					<input type="text" placeholder="搜索..." @click="searchClick($event)" v-model="searchText">
 				</div>
 				<div
 					class="rs_option"
-					v-for="op in select.option | filterBy searchText in 'value'"
+					v-for="op in data.option | filterBy searchText in 'value'"
 					:class="{'rs_option_focus':op.selected,'rs_option_disable':op.disabled}"
 					@click="selectOption(op,$event)"
 				>{{op.value}}</div>
@@ -75,12 +75,12 @@
 			}
 		},
 		props:{
-			select:Object,
+			data:Object,
 		},
 		computed:{
 			selectFocus:function(){
-				let isSelect=this.select.default;
-				this.select.option.forEach(op=>{
+				let isSelect=this.data.default;
+				this.data.option.forEach(op=>{
 					if(op.selected)
 					{
 						isSelect=op.value;
@@ -91,7 +91,7 @@
 			},
 			mainStyle:function(){
 				let allClass=[];
-	            switch(this.select.labelType){
+	            switch(this.data.labelType){
 	                case 'line':
 	                    allClass.push("rs_select_line")
 	                    break
@@ -102,7 +102,7 @@
 	                    allClass.push("rs_select_head")
 	                    break
 	            }
-	            if(this.select.disable)
+	            if(this.data.disabled)
 	            {
 	                allClass.push("rs_select_disable");
 	            }
@@ -143,7 +143,7 @@
 				e.stopPropagation();
 				if(!op.disabled)
 				{
-					this.select.option.forEach(em=>{
+					this.data.option.forEach(em=>{
 						em.selected=false;
 					})
 					op.selected=true;
