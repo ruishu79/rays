@@ -1,7 +1,7 @@
 <!-- 表格分页组件 -->
 <template>
   <div>
-    <div class="rs_pagination_select">
+    <div class="rs_pagination_select" v-if="isLens">
       <span>每页</span>
       <select class="form-control rps_select" v-model="len">
           <option v-for="arr in lens" :value="arr" v-text="arr" :selected="$index === 0 ? true : false"></option>
@@ -74,7 +74,6 @@
 <script>
 export default {
     props: {
-
         // 页码
         pages: {
             type: Array,
@@ -101,6 +100,12 @@ export default {
             default: function () {
                 return [5, 10, 20]
             }
+        },
+
+        //是否有每页显示数量功能
+        isLens:{
+            type: Boolean,
+            default: true 
         },
 
         // 表格数据（数组）

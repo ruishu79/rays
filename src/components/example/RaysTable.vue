@@ -312,7 +312,7 @@
 							},{
 								key: 'age',
 								value: '年龄',
-								sort: 'normal'
+								sort: 'number'
 							},{
 								key: 'tel',
 								value: '电话',
@@ -774,7 +774,7 @@
 					},{
 						key: 'age',
 						value: '年龄',
-						sort: 'normal'
+						sort: 'number'
 					},{
 						key: 'tel',
 						value: '电话',

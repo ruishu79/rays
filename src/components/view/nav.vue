@@ -3,8 +3,8 @@
 		<li>
 			<dl class="l_nav_list">
 				<dt>简介</dt>
-				<dd><a v-link="{path:'../example/rose-table'}">快速开始</a></dd>
-				<dd><a v-link="{path:'../example/rose-table'}">安装</a></dd>
+				<dd><a v-link="{path:'../home'}">快速开始</a></dd>
+				<dd><a v-link="{path:'../home'}">安装</a></dd>
 			</dl>
 		</li>
 		<li>
@@ -38,10 +38,10 @@
 		<li>
 			<dl class="l_nav_list">
 				<dt>整体组件<span>(global)</span></dt>
-				<dd><a v-link="{path:'../example/rose-notification'}">通知<span>(rs-notification)</span></a></dd>
+				<dd><a v-link="{path:'../example/rays-notification'}">通知<span>(rs-notification)</span></a></dd>
 				<dd><a v-link="{path:'../example/rays-breadcrumb'}">面包屑<span>(rs-breadcrumb)</span></a></dd>
-				<dd><a v-link="{path:'../example/rose-pagination'}">分页<span>(rs-pagination)</span></a></dd>
-				<dd><a v-link="{path:'../example/rose-modal'}">弹框<span>(rs-message)</span></a></dd>
+				<dd><a v-link="{path:'../example/rays-pagination'}">分页<span>(rs-pagination)</span></a></dd>
+				<dd><a v-link="{path:'../example/rays-modal'}">弹框<span>(rs-modal)</span></a></dd>
 			</dl>
 		</li>
 		<li>

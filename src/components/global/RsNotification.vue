@@ -29,7 +29,7 @@
 		transform: translateX(100px);
 		opacity: 0;
 	}
-	.notification_list{width: 300px; position: fixed; right: 20px; bottom: 20px; }
+	.notification_list{width: 300px; position: fixed; right: 20px; bottom: 20px; z-index: 9999;}
 	.notification_wrap{width: 300px; padding: 20px; background: #fff; border: 1px solid #ECF0F1; box-shadow: 0 3px 8px rgba(0,0,0,.3); border-radius: 6px; overflow: hidden; margin-bottom: 15px; position: relative;}
 </style>
 <script>
@@ -42,17 +42,17 @@
 			}
 		},
 		props:{
-			notice:{
+			data:{
 				text:String,
 				state:String,
 				delay:Number
 			}
 		},
 		watch:{
-			'notice.text':{
+			'data.text':{
 				deep:true,
 				handler:function(){
-					let noticeIcon=this.notice.state;
+					let noticeIcon=this.data.state;
 					let that=this;
 					switch(noticeIcon){
 						case 'info':
@@ -70,11 +70,11 @@
 						default:
 							break;
 					}
-					if(this.notice.text){
-						this.noticeArray.push({text:this.notice.text,state:noticeIcon,delay:this.notice.delay,delayId:this.delayId});
+					if(this.data.text){
+						this.noticeArray.push({text:this.data.text,state:noticeIcon,delay:this.data.delay,delayId:this.delayId});
 						this.delayId++;
 					}
-					if(this.notice.delay)
+					if(this.data.delay)
 					{
 						let noticeLength=that.noticeArray.length-1;
 						let objId=that.noticeArray[noticeLength].delayId;
@@ -86,11 +86,11 @@
 									}
 								}
 							)
-						},this.notice.delay)
+						},this.data.delay)
 					}
-					this.notice.text='';
-					this.notice.state='';
-					this.notice.delay=null;
+					this.data.text='';
+					this.data.state='';
+					this.data.delay=null;
 				}
 			}
 		},

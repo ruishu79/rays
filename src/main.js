@@ -22,11 +22,11 @@ import RaysButton from './components/example/RaysButton.vue'
 //复选框
 import RaysCheckbox from './components/example/RaysCheckbox.vue'
 //分页
-import RosePagination from './components/example/RosePagination.vue'
+import RaysPagination from './components/example/RaysPagination.vue'
 //弹框
-import RoseModal from './components/example/RoseModal.vue'
+import RaysModal from './components/example/RaysModal.vue'
 //通知
-import RoseNotification from './components/example/RoseNotification.vue'
+import RaysNotification from './components/example/RaysNotification.vue'
 //输入框
 import RaysInput from './components/example/RaysInput.vue'
 //单选框
@@ -101,14 +101,14 @@ router.map({
 	'/example/rays-checkbox':{
 		component:RaysCheckbox
 	},
-	'/example/rose-pagination':{
-		component:RosePagination
+	'/example/rays-pagination':{
+		component:RaysPagination
 	},
-	'/example/rose-modal':{
-		component:RoseModal
+	'/example/rays-modal':{
+		component:RaysModal
 	},
-	'/example/rose-notification':{
-		component:RoseNotification
+	'/example/rays-notification':{
+		component:RaysNotification
 	},
 	'/example/rays-input':{
 		component:RaysInput

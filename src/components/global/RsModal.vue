@@ -1,7 +1,7 @@
 <template>
-	<div v-show="setModal.show">
+	<div v-show="data.show">
 		<div class="cover" @click.self="clickCover" >
-			<div class="modal_style" :class="modalStyle" v-show="setModal.show" transition="modalact">
+			<div class="modal_style" :class="modalStyle" v-show="data.show" transition="modalact">
 				<div class="modal_head">
 					<slot name="head"></slot>
 					<div class="closeBtn" title="关闭" @click="close"><i class="fa fa-close"></i></div>
@@ -48,7 +48,7 @@
 			rsButton
 		},
 		props:{
-			setModal:{
+			data:{
 				show:{
 					type:Boolean,
 					default:false
@@ -65,7 +65,7 @@
 		},
 		computed:{
 			modalStyle(){
-				switch(this.setModal.size)
+				switch(this.data.size)
 				{
 					case 'full' :
 						return 'fullModal'
@@ -86,7 +86,7 @@
 		},
 		methods:{
 			close(){
-				this.setModal.show=false
+				this.data.show=false
 			},
 			clickCover(){
 				if(!this.force){

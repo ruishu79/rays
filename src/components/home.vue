@@ -19,7 +19,7 @@
 		<p>rays-ui是一个基于vue.js开发的组件库,目的是帮助你快速完成产品的开发</p>
 		<h3>特点</h3>
 		<ul>
-			<li>npm + webpack + vue + bootstrap 的开发模式</li>
+			<li>webpack + vue + bootstrap 的开发模式</li>
 			<li>通过babel使用ES6语法进行开发使用</li>
 			<li>引用bootstrap响应式布局及部分样式</li>
 			<li>引用Font Awesome图标库</li>
